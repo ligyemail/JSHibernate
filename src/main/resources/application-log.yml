@@ -1,0 +1,7 @@
+######1################for root log################################################################
+log4j:
+  rootLogger: info,Console
+  appender:
+    Console: org.apache.log4j.ConsoleAppender
+      layout: org.apache.log4j.PatternLayout
+        ConversionPattern: %d{ISO8601} %-5p [%F:%L]:%m%n
